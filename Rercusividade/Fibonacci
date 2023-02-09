@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<locale.h>
+#include<stdlib.h>
+
+int fib(int n);
+
+int main (){
+	
+	setlocale(LC_ALL,"Portuguese_Brazil");
+	
+	int n,fibo;
+	
+	scanf("%d",&n);
+
+	system("cls");
+	
+	printf("A sequência de %d é %d",n,fib (n));
+
+	}
+
+int fib (int n){
+	
+	if(n>2) return fib (n-2) + fib (n-1);
+		
+	return 1;
+	
+}
